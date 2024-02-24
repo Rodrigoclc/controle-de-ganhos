@@ -1,0 +1,54 @@
+<main>
+    <mat-toolbar>
+        <h1 [routerLink]="['/nova-atididade']"><-</h1>
+        <span> Atividade</span>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
+
+    <mat-card>
+        <mat-card-header style="justify-content: end; margin-bottom: 5px;background-color: blue;">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-card-header>
+
+        <mat-card-content style="display: flex;justify-content: space-between;">
+            <div>
+                <div>Quilometragem percorrida</div>
+                <div>Data</div>
+                <div>Horas trabalhadas</div>
+                <div>Total de rendimentos</div>
+                <div>Saldo do dia</div>
+            </div>
+            <div>
+                <div>0,00</div>
+                <div>0,00</div>
+                <div>0,00</div>
+                <div>0,00</div>
+                <div>0,00</div>
+            </div>
+        </mat-card-content>
+
+    </mat-card>
+    <br>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Rendimentos</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p>Não há rendimentos nesta atividade</p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+            <button mat-button [routerLink]="['/rendimentos']">Registrar Rendimentos</button>
+        </mat-card-actions>
+    </mat-card>
+    <br>
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title>Gastos</mat-card-title>
+            <mat-card-subtitle>Não há gastos nesta atividade</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-actions align="end">
+            <button mat-button [routerLink]="['/gastos']">Registrar Gastos</button>
+        </mat-card-actions>
+    </mat-card>
+
+</main>

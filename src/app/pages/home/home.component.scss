@@ -1,0 +1,14 @@
+main {
+    width: 100vw;
+    height: 86vh;
+
+    mat-toolbar {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    mat-card {
+        width: 95%;
+        margin: auto;
+    }
+}

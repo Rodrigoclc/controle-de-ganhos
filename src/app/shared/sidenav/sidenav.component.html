@@ -1,0 +1,16 @@
+<mat-drawer-container class="example-container" autosize>
+    <app-header></app-header>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+        <div>
+            <div>Foto</div>
+            <p>Nome</p>
+            <p>Meu perfil ></p>
+        </div>
+        @if (showFiller) {
+        <p>Lorem, ipsum dolor sit amet consectetur.</p>
+        }
+        <button (click)="showFiller = !showFiller" mat-raised-button>
+            Toggle extra text
+        </button>
+    </mat-drawer>
+</mat-drawer-container>

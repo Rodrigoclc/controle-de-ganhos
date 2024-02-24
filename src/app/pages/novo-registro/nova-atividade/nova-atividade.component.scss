@@ -1,0 +1,17 @@
+main {
+
+    mat-toolbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    mat-card {
+        width: 95%;
+        margin: auto;
+    }
+
+    mat-vertical-stepper {
+        width: 95%;
+        margin: auto;
+    }
+}

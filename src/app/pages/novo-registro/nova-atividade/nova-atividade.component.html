@@ -1,0 +1,39 @@
+<main>
+    <mat-toolbar>
+        <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"
+            [routerLink]="['/principal']"></mat-icon>
+        <span> Novo Registro</span>
+        <span class="example-spacer"></span>
+    </mat-toolbar>
+
+    <mat-divider></mat-divider>
+
+
+    <form [formGroup]="novaAtividadeform" (ngSubmit)="submitForm()" class="example-form"
+        style="display: flex;flex-direction: column;">
+
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Data</mat-label>
+            <span matTextPrefix> &nbsp;</span>
+            <input type="date" matInput formControlName="data">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Horas trabalhadas</mat-label>
+            <span matTextPrefix> &nbsp;</span>
+            <input type="number" matInput placeholder="Ex. 8" formControlName="horasTrabalhadas">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+            <mat-label>Quantidade de Km percorrido</mat-label>
+            <input type="number" matInput placeholder="Ex. 200" formControlName="kmRodados">
+            <mat-icon matSuffix>mode_edit</mat-icon>
+        </mat-form-field>
+        <button mat-raised-button color="primary" type="submit" [routerLink]="['/nova-atividade2']">Salvar</button>
+        <button mat-raised-button color="warn" [routerLink]="['/principal']">Cancelar</button>
+        
+    </form>
+</main>
